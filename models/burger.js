@@ -1,8 +1,4 @@
-// require orm file
 var orm = require("../config/orm.js");
-
-// create burger variable and export it
-// call back all of our orms
 var burger = {
   selectAll: function(cb) {
     orm.selectAll("burgers", function(res) {
